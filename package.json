@@ -3,7 +3,7 @@
   "displayName": "id-creator",
   "publisher": "SushantGangwar",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -18,7 +18,7 @@
   "contributes": {
     "commands": [
       {
-        "key": "shift+alt+j",
+        "key": "shift+cmd+j",
         "command": "extension.transformSelectedText",
         "when": "editorTextFocus",
         "title": "ID Created"
