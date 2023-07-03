@@ -3,20 +3,24 @@
   "displayName": "id-creator",
   "publisher": "SushantGangwar",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.79.0"
   },
   "categories": [
     "Other"
   ],
-  "repository": {"url": "https://github.com/sushantgwr87/id-creator"},
+  "repository": {
+    "url": "https://github.com/sushantgwr87/id-creator"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
+        "key": "shift+alt+j",
         "command": "extension.transformSelectedText",
+        "when": "editorTextFocus",
         "title": "ID Created"
       }
     ]
