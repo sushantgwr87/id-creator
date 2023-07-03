@@ -1,6 +1,7 @@
 {
   "name": "idCreator",
   "displayName": "id-creator",
+  "publisher": "SushantGangwar",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -9,13 +10,14 @@
   "categories": [
     "Other"
   ],
+  "repository": {"url": "https://github.com/sushantgwr87/id-creator"},
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "idCreator.helloWorld",
-        "title": "Hello World"
+        "command": "extension.transformSelectedText",
+        "title": "ID Created"
       }
     ]
   },
