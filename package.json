@@ -3,7 +3,7 @@
   "displayName": "id-creator",
   "publisher": "SushantGangwar",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -13,7 +13,10 @@
   "repository": {
     "url": "https://github.com/sushantgwr87/id-creator"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand: extension.transformSelectedText",
+    "onEditorFocus"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
