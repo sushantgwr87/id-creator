@@ -3,7 +3,7 @@
   "displayName": "id-creator",
   "publisher": "SushantGangwar",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -25,9 +25,21 @@
         "command": "extension.transformSelectedText",
         "when": "editorTextFocus",
         "title": "ID Created"
+      },
+      {
+        "command": "extension.convertMarkdownLink",
+        "title": "Convert Markdown Link"
       }
-    ]
+    ],
   },
+  "keybindings": [
+    {
+      "command": "extension.convertMarkdownLink",
+      "key": "ctrl+alt+j",
+      "mac": "cmd+alt+j",
+      "when": "editorTextFocus"
+    }
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
