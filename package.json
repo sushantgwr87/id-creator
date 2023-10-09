@@ -3,7 +3,7 @@
   "displayName": "id-creator",
   "publisher": "SushantGangwar",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -14,7 +14,8 @@
     "url": "https://github.com/sushantgwr87/id-creator"
   },
   "activationEvents": [
-    "onCommand: extension.transformSelectedText",
+    "onCommand:extension.transformSelectedText",
+    "onCommand:extension.convertMarkdownLink",
     "onEditorFocus"
   ],
   "main": "./out/extension.js",
@@ -28,15 +29,16 @@
       },
       {
         "command": "extension.convertMarkdownLink",
-        "title": "Convert Markdown Link"
+        "title": "Convert Markdown Link",
+        "key": "cmd+alt+j",
+        "when": "editorTextFocus"
       }
     ]
   },
   "keybindings": [
     {
       "command": "extension.convertMarkdownLink",
-      "key": "ctrl+alt+j",
-      "mac": "cmd+alt+j",
+      "key": "cmd+alt+j",
       "when": "editorTextFocus"
     }
   ],
