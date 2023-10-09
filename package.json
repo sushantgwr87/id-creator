@@ -30,7 +30,7 @@
         "command": "extension.convertMarkdownLink",
         "title": "Convert Markdown Link"
       }
-    ],
+    ]
   },
   "keybindings": [
     {
